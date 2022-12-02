@@ -5,11 +5,14 @@ DeepFake Video Detection Project
 In this project we propose different methods to detect Face Swapped DeepFake Videos.
 <html>  
 1. CNN Models<br>
-First we extract videoframes from videos, then we extract face from the frame and simultaneously apply pretrained CNN models to predict whether the given frame is REAL or FAKE. If total number of FAKE frames exceed a certain threshold, we predict that the input video is FAKE otherewise REAL.
-Different CNN models used,
-   * i. EfficientNetB0
-   * ii. ResNet50
-   * iii. MesoNet
+  <p>
+First we extract videoframes from videos, then we extract face from the frame and simultaneously apply pretrained CNN models to predict whether the given frame is REAL or FAKE. If total number of FAKE frames exceed a certain threshold, we predict that the input video is FAKE otherewise REAL.</p><br>
+    Different CNN models used,
+   <ul>
+     <li>EfficientNetB0</li>
+     <li>ResNet50</li>
+     <li>MesoNet</li>
+  </ul>
  Here for EfficientNet and ResNet we used imagenet weights and for MesoNet we used pretrained DeepFake detection weights available online.
 </html>
 2. Combination of CNN and RNN models
